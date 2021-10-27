@@ -13,6 +13,12 @@ variable "location" {
   description = "location of your resource group"
 }
 
+variable "usecase" {
+  type         = string
+  default = ""
+  description = "description of what the keyvault will be used for ex. 'vmpasswords'"
+}
+
 variable "rgname" {
   type        = string
   description = "the name of the resource group in which to deploy the resource groups"

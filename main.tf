@@ -26,7 +26,10 @@ resource "azurerm_key_vault" "keyvault" {
   purge_protection_enabled    = var.prg_protect
   sku_name                    = var.sku
   tags = {
-    Environment   = var.enviro
+    environment = var.enviro
+    prjnum = var.prjnum
+    orgname = var.orgname
+    usecase = var.usecase
   }
   access_policy {
     tenant_id = var.tenantid
