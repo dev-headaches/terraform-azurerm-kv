@@ -19,6 +19,12 @@ variable "usecase" {
   description = "description of what the keyvault will be used for ex. 'vmpasswords'"
 }
 
+variable "orgname" {
+  type         = string
+  default = ""
+  description = "name of the organization the kv is being deployed for"
+}
+
 variable "rgname" {
   type        = string
   description = "the name of the resource group in which to deploy the resource groups"
